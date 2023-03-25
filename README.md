@@ -53,14 +53,14 @@ input_image = preprocess_image("path/to/your/image.jpg", transform)
 ```
 
 ## Run the model on the preprocessed image
-
+```
 output = model(input_image.unsqueeze(0))
-
+```
 
 ## Get the predicted class index
-
+```
 _, predicted_class_index = torch.max(output, 1)
-
+```
 
 ## Map the predicted class index to the corresponding class name
 
